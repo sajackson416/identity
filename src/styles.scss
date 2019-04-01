@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+$font-stack: Helvetica, sans-serif;
+$primary-color: #0967ff;
+$secondary-color: #ff6b09;
+
+body {
+  font: 100% $font-stack;
+}
+
+.round {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.navbar {
+  background: $primary-color;
+}
+
