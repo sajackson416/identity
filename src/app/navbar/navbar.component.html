@@ -1,12 +1,30 @@
-<nav class="navbar navbar-expand-sm navbar-primary">
+<nav class="navbar navbar-expand-sm navbar-dark app-navbar-top">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
           aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a href="/" class="navbar-brand">
+  <a href="/" class="navbar-brand app-brand-logo">
     <img src="../../assets/img/portrait_824x824.jpg" alt="portrait" class="round portrait">
   </a>
 
-  <div class="collapse navbar-collapse" id="navbarMenu"></div>
+  <div class="collapse navbar-collapse" id="navbarMenu">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" (click)="onNavigate('about')">
+        <a class="nav-link"><span class="sr-only">(current)</span>About</a>
+      </li>
+      <li class="nav-item" (click)="onNavigate('skills')">
+        <a class="nav-link">Skills</a>
+      </li>
+      <li class="nav-item" (click)="onNavigate('experience')">
+        <a class="nav-link">Experience</a>
+      </li>
+      <li class="nav-item" (click)="onNavigate('education')">
+        <a class="nav-link">Education</a>
+      </li>
+      <li class="nav-item" (click)="onNavigate('contact')">
+        <a class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
 
 </nav>

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {NavigatorService} from '../shared/navigator.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,10 +8,20 @@ import {Component, OnInit} from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() {
+  constructor(private navigator: NavigatorService) {
   }
 
   ngOnInit() {
   }
 
+  onNavigate(id: string) {
+    const element = document.getElementById(id);
+    console.log(element);
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start'
+    });
+    // this.navigator.scrollToElem(id);
+  }
 }

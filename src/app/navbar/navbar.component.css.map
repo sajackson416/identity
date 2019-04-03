@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "navbar.component.scss"
+  ],
+  "names": [],
+  "mappings": "AAEA;EACE",
+  "file": "navbar.component.css"
+}
